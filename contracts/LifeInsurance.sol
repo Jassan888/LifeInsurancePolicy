@@ -2,7 +2,7 @@ pragma solidity >=0.4.22 <0.8.0;
 
 import "@openzeppelin/contracts/math/SafeMath.sol";
 
-contract Insurance{
+contract LifeInsurance{
     using SafeMath for uint;
     enum Statuses {Alive, Deceased}
     Statuses currentStatus;
