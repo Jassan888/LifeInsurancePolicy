@@ -1,6 +1,6 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.0;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.0/contracts/math/SafeMath.sol";
+import'@openzeppelin/contracts/math/safemath.sol';
 
 contract LifeInsurance{
     using SafeMath for uint;
