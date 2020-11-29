@@ -1,5 +1,5 @@
 const LifeInsurance = artifacts.require('LifeInsurance');
 
 module.exports = function (deployer) {
-  deployer.deploy(LifeiInsurance);
+  deployer.deploy(LifeInsurance);
 };
