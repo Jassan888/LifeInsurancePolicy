@@ -41,7 +41,7 @@ contract LifeInsurance{
     }
     
     function setPremiums() public {
-        premiums = 40;
+        premiums = 60;
     }
     
    
