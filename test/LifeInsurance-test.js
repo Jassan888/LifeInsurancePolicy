@@ -1,16 +1,17 @@
-const LifeInsurance= artifacts.require('./LifeInsurance.sol');
+const LifeInsurance= artifacts.require('LifeInsurance');
 
-contract('LifeInsurance', function(accounts){
+contract(LifeInsurance,()=>{
 
-    it('initalize the Beneficiary',function(){
+    let lifeInsurance= null;
 
-        return Beneficiary.deploy().then(function(instance){
+    before(async()=>{
 
-            return instance.premiums();
+        lifeInsurance= await LifeInsurance.deployed();
+    });
+    it('Should set premiums', async()=>{
 
-         }).then(function(Beneficiary){
+        const setPremiums= await lifeInsurance.setPremiums();
 
-            assert.equal(Beneficiary);
-         });
+        assert(premiums == '60');
     });
 });

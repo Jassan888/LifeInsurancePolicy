@@ -9,14 +9,15 @@ contract LifeInsurance{
     
     address payable insurer;
     address payable insured;
-    uint premiums;
-    uint cashValue;
+    uint public premiums;
+    uint public cashValue;
     
     mapping(uint=>Beneficiary) public beneficiary;
     mapping(uint=> Selection) insuranceType;
     mapping(uint=>moreOptions) Rider;
     
     constructor() public{
+
         cashValue = 250000 ether;
         currentStatus= Statuses.Alive;
     }
